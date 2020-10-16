@@ -2,11 +2,11 @@ Komunikator SMS
 **************************************************
 Bezpieczeństwo
 == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == ==
-* AndroidAPS umożliwia zdalne sterowanie telefonem dziecka za pomocą wiadomości tekstowej. Jeśli włączysz ten komunikator SMS, zawsze pamiętaj, że telefon skonfigurowany do wydawania poleceń zdalnych może zostać skradziony. Dlatego zawsze chroń go przynajmniej kodem PIN. A strong password or biometrics are recommended.
-* Additionally it is recommended to allow a `second phone number <#authorized-phone-numbers>`_ for SMS commands. So you can use second number to `temporary disable <#other>`_ SMS communicator in case your main remote phone gets lost or stolen.
+* AndroidAPS umożliwia zdalne sterowanie telefonem dziecka za pomocą wiadomości tekstowej. Jeśli włączysz ten komunikator SMS, zawsze pamiętaj, że telefon skonfigurowany do wydawania poleceń zdalnych może zostać skradziony. Dlatego zawsze chroń go przynajmniej kodem PIN. Zaleca się silne hasło, lub zabespieczenie biometryczne.
+* Dodatnkowo zaleca się autoryzację  `second phone number <#authorized-phone-numbers>`_ dla koment SMS. W takim wypadku mozesz uzyć drugiego telefonu do tymczasowego zablokowania komunikacji SMS, gdyby pierwszy telefon zaginał bądź został skradziony.
 * AndroidAPS poinformuje Cię również Sms-em, jeśli Twoje polecenia zdalne, takie jak zmiana bolusa lub profilu, zostały wykonane. Zaleca się takie ustawienie funkcji sterowania pompą poprzez sms, aby teksty potwierdzające były wysyłane na co najmniej dwa różne numery telefonów, w przypadku kradzieży jednego z telefonów odbierających drugi telefon odbierze informację o zmianach.
-* **If you bolus through SMS Commands you must enter carbs through Nightscout (NSClient, Website...)!** If you fail to do so IOB would be correct with too low COB potentially leading to not performed correction bolus as AAPS assumes that you have too much active insulin.
-* As of AndroidAPS version 2.7 an authenticator app with a time-based one-time password must be used to increase safety when using SMS commands.
+* **Jeśli podajesz bolus przez SMS musisz usupełnić liczbę węglowodanów ręcznie w Nightscout (NSClient, Website...)!** Jeśli tego nie zrobisz IOB będzie skroygowane ze zbyt niską wartością COB, co potencjanie moze prowadzić do nie podania bolusa korekcyjnego gdyż AAPS będzie zakładać posiadanie zbyt dużej ilości aktywnej insuliny.
+* Od AndroidAPS wersji 2.7 musi być zastopsowana aplikacja uwierzytelniająca, z czasowo ważnym tokenem, w celu podniesienia poziomu bezpieczeństwa komend SMS.
 
 Setup SMS commands
 == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == ==
